@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
-    - cron: '30 19 * * *'
+    - cron: '30 10 * * *'
 
 jobs:
   build:
@@ -30,7 +30,4 @@ jobs:
         secretKeys: ${{ secrets.GAME_SECRETKEYS }}
         verCode: ${{ secrets.GAME_VERCODE }}
         UserAgent: ${{ secrets.GAME_USERAGENT }}
-        TGBotToken: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        TGAdminId: ${{ secrets.TELEGRAM_ADMIN_ID }}
-        GithubToken: ${{ secrets.VERY_IMPORTANT_TOKEN }}
-        GithubName: ${{ secrets.VERY_IMPORTANT_NAME }}
+      
